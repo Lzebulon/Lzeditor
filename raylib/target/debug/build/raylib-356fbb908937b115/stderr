@@ -1,0 +1,54 @@
+Dans le fichier inclus depuis rtextures.c:64:
+rtextures.c: Dans la fonction « LoadImageAnimFromMemory »:
+rtextures.c:463:21: attention: passer l'argument 1 de « free » abandonne le qualificatif « const » du type pointé [-Wdiscarded-qualifiers]
+  463 |             RL_FREE(fileData);
+      |                     ^~~~~~~~
+raylib.h:136:38: note: dans la définition de la macro « RL_FREE »
+  136 |     #define RL_FREE(ptr)        free(ptr)
+      |                                      ^~~
+Dans le fichier inclus depuis rtextures.c:76:
+/usr/include/stdlib.h:687:25: note: « void * » attendu mais l'argument est de type « const unsigned char * »
+  687 | extern void free (void *__ptr) __THROW;
+      |                   ~~~~~~^~~~~
+Dans le fichier inclus depuis rtextures.c:216:
+external/stb_image_resize2.h: Au plus haut niveau:
+external/stb_image_resize2.h:2866:14: attention: « stbir__support_zero » défini mais pas utilisé [-Wunused-function]
+ 2866 | static float stbir__support_zero(float s, void * user_data)
+      |              ^~~~~~~~~~~~~~~~~~~
+external/stb_image_resize2.h:2503:13: attention: « stbir_simd_memcpy » défini mais pas utilisé [-Wunused-function]
+ 2503 | static void stbir_simd_memcpy( void * dest, void const * src, size_t bytes )
+      |             ^~~~~~~~~~~~~~~~~
+Dans le fichier inclus depuis rglfw.c:87:
+external/glfw/src/posix_poll.c:29: attention: « _GNU_SOURCE » redéfini
+   29 | #define _GNU_SOURCE
+      | 
+<ligne-de-commande>: note: ceci est l'emplacement d’une précédente définition
+Dans le fichier inclus depuis rmodels.c:43:
+external/par_shapes.h: Dans la fonction « par_shapes_create_disk »:
+raylib.h:127:33: attention: l'argument 1, ayant une plage [18446744069414584320, 18446744073709551614], excède la taille maximale de l'objet (9223372036854775807) [-Walloc-size-larger-than=]
+  127 |     #define RL_MALLOC(sz)       malloc(sz)
+      |                                 ^~~~~~~~~~
+rmodels.c:99:35: note: dans l'expansion de la macro « RL_MALLOC »
+   99 |     #define PAR_MALLOC(T, N) ((T*)RL_MALLOC(N*sizeof(T)))
+      |                                   ^~~~~~~~~
+external/par_shapes.h:741:23: note: dans l'expansion de la macro « PAR_MALLOC »
+  741 |     mesh->triangles = PAR_MALLOC(PAR_SHAPES_T, 3 * mesh->ntriangles);
+      |                       ^~~~~~~~~~
+Dans le fichier inclus depuis rmodels.c:57:
+/usr/include/stdlib.h:672:14: note: dans un appel à la fonction d'allocation « malloc » déclarée ici
+  672 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |              ^~~~~~
+Dans le fichier inclus depuis raudio.c:242:
+external/qoa.h: Dans la fonction « qoa_encode_frame »:
+external/qoa.h:466:36: attention: « best_slice » pourrait être utilisé sans être initialisé [-Wmaybe-uninitialized]
+  466 |                         best_slice <<= (QOA_SLICE_LEN - slice_len) * 3;
+      |                         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+external/qoa.h:409:38: note: « best_slice » a été déclaré ici
+  409 |                         qoa_uint64_t best_slice;
+      |                                      ^~~~~~~~~~
+external/qoa.h:455:45: attention: « best_scalefactor » pourrait être utilisé sans être initialisé [-Wmaybe-uninitialized]
+  455 |                         prev_scalefactor[c] = best_scalefactor;
+      |                         ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+external/qoa.h:411:29: note: « best_scalefactor » a été déclaré ici
+  411 |                         int best_scalefactor;
+      |                             ^~~~~~~~~~~~~~~~

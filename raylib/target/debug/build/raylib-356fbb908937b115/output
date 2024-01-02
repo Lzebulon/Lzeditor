@@ -1,0 +1,20 @@
+cargo:rerun-if-changed=src/wrapper.h
+cargo:rerun-if-env-changed=TARGET
+cargo:rerun-if-env-changed=BINDGEN_EXTRA_CLANG_ARGS_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=BINDGEN_EXTRA_CLANG_ARGS_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=BINDGEN_EXTRA_CLANG_ARGS
+cargo:rerun-if-changed=src/../raylib/src/raylib.h
+cargo:rerun-if-changed=/usr/lib/clang/16/include/stdarg.h
+cargo:rerun-if-changed=/usr/lib/clang/16/include/stdbool.h
+gcc -c rcore.c -Wall -D_GNU_SOURCE -DPLATFORM_DESKTOP -DGRAPHICS_API_OPENGL_33 -Wno-missing-braces -Werror=pointer-arith -fno-strict-aliasing  -std=c99 -fPIC -O1 -Werror=implicit-function-declaration -I.  -Iexternal/glfw/include -Iexternal/glfw/deps/mingw
+gcc -c rshapes.c -Wall -D_GNU_SOURCE -DPLATFORM_DESKTOP -DGRAPHICS_API_OPENGL_33 -Wno-missing-braces -Werror=pointer-arith -fno-strict-aliasing  -std=c99 -fPIC -O1 -Werror=implicit-function-declaration -I.  -Iexternal/glfw/include -Iexternal/glfw/deps/mingw
+gcc -c rtextures.c -Wall -D_GNU_SOURCE -DPLATFORM_DESKTOP -DGRAPHICS_API_OPENGL_33 -Wno-missing-braces -Werror=pointer-arith -fno-strict-aliasing  -std=c99 -fPIC -O1 -Werror=implicit-function-declaration -I.  -Iexternal/glfw/include -Iexternal/glfw/deps/mingw
+gcc -c rtext.c -Wall -D_GNU_SOURCE -DPLATFORM_DESKTOP -DGRAPHICS_API_OPENGL_33 -Wno-missing-braces -Werror=pointer-arith -fno-strict-aliasing  -std=c99 -fPIC -O1 -Werror=implicit-function-declaration -I.  -Iexternal/glfw/include -Iexternal/glfw/deps/mingw
+gcc -c utils.c -Wall -D_GNU_SOURCE -DPLATFORM_DESKTOP -DGRAPHICS_API_OPENGL_33 -Wno-missing-braces -Werror=pointer-arith -fno-strict-aliasing  -std=c99 -fPIC -O1 -Werror=implicit-function-declaration -I.  -Iexternal/glfw/include -Iexternal/glfw/deps/mingw
+gcc  -c rglfw.c -Wall -D_GNU_SOURCE -DPLATFORM_DESKTOP -DGRAPHICS_API_OPENGL_33 -Wno-missing-braces -Werror=pointer-arith -fno-strict-aliasing  -std=c99 -fPIC -O1 -Werror=implicit-function-declaration -I.  -Iexternal/glfw/include -Iexternal/glfw/deps/mingw
+gcc -c rmodels.c -Wall -D_GNU_SOURCE -DPLATFORM_DESKTOP -DGRAPHICS_API_OPENGL_33 -Wno-missing-braces -Werror=pointer-arith -fno-strict-aliasing  -std=c99 -fPIC -O1 -Werror=implicit-function-declaration -I.  -Iexternal/glfw/include -Iexternal/glfw/deps/mingw
+gcc -c raudio.c -Wall -D_GNU_SOURCE -DPLATFORM_DESKTOP -DGRAPHICS_API_OPENGL_33 -Wno-missing-braces -Werror=pointer-arith -fno-strict-aliasing  -std=c99 -fPIC -O1 -Werror=implicit-function-declaration -I.  -Iexternal/glfw/include -Iexternal/glfw/deps/mingw
+ar rcs /home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/build/raylib-356fbb908937b115/out/libraylib.a rcore.o rshapes.o rtextures.o rtext.o utils.o rglfw.o rmodels.o raudio.o
+raylib static library generated (libraylib.a) in /home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/build/raylib-356fbb908937b115/out!
+cargo:rustc-link-search=native=/home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/build/raylib-356fbb908937b115/out
+cargo:rustc-link-lib=static=raylib

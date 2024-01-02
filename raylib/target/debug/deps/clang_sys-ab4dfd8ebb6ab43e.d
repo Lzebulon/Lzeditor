@@ -1,0 +1,14 @@
+/home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/deps/libclang_sys-ab4dfd8ebb6ab43e.rmeta: /home/lzebulon/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/src/lib.rs /home/lzebulon/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/src/support.rs /home/lzebulon/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/src/link.rs /home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/build/clang-sys-e053dc90899155e6/out/macros.rs /home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/build/clang-sys-e053dc90899155e6/out/common.rs /home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/build/clang-sys-e053dc90899155e6/out/dynamic.rs
+
+/home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/deps/libclang_sys-ab4dfd8ebb6ab43e.rlib: /home/lzebulon/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/src/lib.rs /home/lzebulon/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/src/support.rs /home/lzebulon/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/src/link.rs /home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/build/clang-sys-e053dc90899155e6/out/macros.rs /home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/build/clang-sys-e053dc90899155e6/out/common.rs /home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/build/clang-sys-e053dc90899155e6/out/dynamic.rs
+
+/home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/deps/clang_sys-ab4dfd8ebb6ab43e.d: /home/lzebulon/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/src/lib.rs /home/lzebulon/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/src/support.rs /home/lzebulon/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/src/link.rs /home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/build/clang-sys-e053dc90899155e6/out/macros.rs /home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/build/clang-sys-e053dc90899155e6/out/common.rs /home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/build/clang-sys-e053dc90899155e6/out/dynamic.rs
+
+/home/lzebulon/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/src/lib.rs:
+/home/lzebulon/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/src/support.rs:
+/home/lzebulon/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/src/link.rs:
+/home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/build/clang-sys-e053dc90899155e6/out/macros.rs:
+/home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/build/clang-sys-e053dc90899155e6/out/common.rs:
+/home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/build/clang-sys-e053dc90899155e6/out/dynamic.rs:
+
+# env-dep:OUT_DIR=/home/lzebulon/Documents/dev/lzeditor/raylib/target/debug/build/clang-sys-e053dc90899155e6/out
